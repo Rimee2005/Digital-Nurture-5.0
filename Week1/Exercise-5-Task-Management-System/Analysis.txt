@@ -1,0 +1,56 @@
+Exercise 5: Task Management System
+
+Linked Lists:
+
+1. Singly Linked List
+- Each node contains data and a reference to the next node.
+- Traversal is only possible in the forward direction.
+
+2. Doubly Linked List
+- Each node contains data, next pointer, and previous pointer.
+- Traversal is possible in both forward and backward directions.
+
+Time Complexity Analysis:
+
+Add Task:
+O(n)
+
+Search Task:
+O(n)
+
+Traverse Tasks:
+O(n)
+
+Delete Task:
+O(n)
+
+Explanation:
+
+Add:
+Need to traverse to the last node before inserting.
+
+Search:
+May need to visit every node.
+
+Traverse:
+Every node is visited exactly once.
+
+Delete:
+Need to locate the node before removing it.
+
+Advantages of Linked Lists over Arrays:
+
+- Dynamic size.
+- Easy insertion and deletion.
+- No need for contiguous memory allocation.
+- Memory is allocated as needed.
+
+Limitations:
+
+- Extra memory required for pointers.
+- Slower access because indexing is not available.
+- Traversal is required to access elements.
+
+Conclusion:
+
+Linked Lists are more suitable than arrays when the size of data changes frequently and insertions/deletions are common.

@@ -1,0 +1,42 @@
+Exercise 3: Sorting Customer Orders
+
+Sorting Algorithms:
+
+1. Bubble Sort
+- Compares adjacent elements and swaps them if they are in the wrong order.
+- Simple but inefficient for large datasets.
+
+2. Insertion Sort
+- Builds the sorted array one element at a time.
+- Efficient for small datasets.
+
+3. Quick Sort
+- Uses a pivot element and partitions the array.
+- Very fast for large datasets.
+
+4. Merge Sort
+- Divides the array into halves and merges them in sorted order.
+- Stable and efficient.
+
+Time Complexity Comparison:
+
+Bubble Sort:
+Best Case    : O(n)
+Average Case : O(n²)
+Worst Case   : O(n²)
+
+Quick Sort:
+Best Case    : O(n log n)
+Average Case : O(n log n)
+Worst Case   : O(n²)
+
+Why Quick Sort is Preferred:
+
+- Faster on large datasets.
+- Average performance is O(n log n).
+- Requires less memory compared to Merge Sort.
+- Widely used in real-world applications.
+- Bubble Sort becomes very slow when the number of orders increases.
+
+Conclusion:
+Quick Sort is generally preferred because it provides much better performance for large collections of customer orders.

@@ -1,0 +1,66 @@
+Exercise 7: Financial Forecasting
+
+Recursion:
+
+Recursion is a technique in which a method calls itself to solve a problem.
+A recursive solution usually consists of:
+
+1. Base Case
+   - Stops the recursion.
+
+2. Recursive Case
+   - Calls the same method with a smaller problem.
+
+Advantages of Recursion:
+
+- Simplifies complex problems.
+- Produces cleaner and shorter code.
+- Useful for divide-and-conquer algorithms.
+
+Recursive Formula Used:
+
+Future Value(n) =
+Future Value(n-1) × (1 + Growth Rate)
+
+Base Case:
+Future Value(0) = Current Value
+
+Example:
+
+Current Value = 10000
+Growth Rate = 10%
+Years = 5
+
+Year 1 = 10000 × 1.10 = 11000
+Year 2 = 11000 × 1.10 = 12100
+Year 3 = 12100 × 1.10 = 13310
+Year 4 = 13310 × 1.10 = 14641
+Year 5 = 14641 × 1.10 = 16105.10
+
+Time Complexity:
+
+T(n) = T(n-1) + O(1)
+
+Time Complexity = O(n)
+
+Space Complexity = O(n)
+
+because each recursive call is stored in the call stack.
+
+Optimization:
+
+1. Memoization
+   - Store previously computed values and reuse them.
+
+2. Dynamic Programming
+   - Convert recursion into an iterative solution.
+
+3. Iterative Approach
+   - Eliminates recursive call overhead.
+   - Reduces space complexity from O(n) to O(1).
+
+Conclusion:
+
+The recursive solution is simple and easy to understand.
+Its time complexity is O(n), making it suitable for moderate forecasting periods.
+For very large inputs, an iterative or dynamic programming approach is preferred.

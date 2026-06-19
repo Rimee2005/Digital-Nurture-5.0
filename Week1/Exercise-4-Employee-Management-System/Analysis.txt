@@ -1,0 +1,57 @@
+Exercise 4: Employee Management System
+
+Array Representation:
+
+Arrays store elements in contiguous memory locations.
+Each element can be accessed directly using its index.
+
+Advantages of Arrays:
+- Fast access using index.
+- Easy to traverse.
+- Memory efficient.
+- Simple implementation.
+
+Time Complexity:
+
+Add Employee:
+O(1)
+
+Search Employee:
+O(n)
+
+Traverse Employees:
+O(n)
+
+Delete Employee:
+O(n)
+
+Explanation:
+
+Add:
+Employee is inserted at the next available position.
+
+Search:
+May need to check all employees in the worst case.
+
+Traverse:
+Every employee record is visited once.
+
+Delete:
+Elements after the deleted employee must be shifted left.
+
+Limitations of Arrays:
+
+- Fixed size.
+- Insertion and deletion are costly.
+- Wasted memory if array is not fully used.
+- Cannot grow dynamically.
+
+When to Use Arrays:
+
+- When the number of records is known in advance.
+- When frequent access by index is required.
+- When memory efficiency is important.
+
+Conclusion:
+
+Arrays provide fast access and simple implementation, but are less suitable when the data size changes frequently.

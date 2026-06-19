@@ -1,0 +1,52 @@
+Exercise 6: Library Management System
+
+Search Algorithms:
+
+1. Linear Search
+- Checks each element one by one.
+- Works on both sorted and unsorted data.
+- Easy to implement.
+
+2. Binary Search
+- Repeatedly divides the search space into halves.
+- Requires the data to be sorted.
+- Much faster for large datasets.
+
+Time Complexity Comparison:
+
+Linear Search:
+Best Case    : O(1)
+Average Case : O(n)
+Worst Case   : O(n)
+
+Binary Search:
+Best Case    : O(1)
+Average Case : O(log n)
+Worst Case   : O(log n)
+
+Comparison:
+
+Linear Search:
+- Suitable for small datasets.
+- Works with unsorted data.
+- Simpler implementation.
+
+Binary Search:
+- Suitable for large datasets.
+- Requires sorted data.
+- Significantly faster than Linear Search.
+
+When to Use:
+
+Use Linear Search:
+- Small collections of books.
+- Data is not sorted.
+
+Use Binary Search:
+- Large collections of books.
+- Data is already sorted.
+- Frequent search operations are required.
+
+Conclusion:
+
+Binary Search is preferred for large library systems because it reduces search time significantly from O(n) to O(log n).
