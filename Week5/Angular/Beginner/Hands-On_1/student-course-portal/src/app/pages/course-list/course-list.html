@@ -1,1 +1,18 @@
-<p>course-list works!</p>
+<h1>Available Courses</h1>
+
+<div class="course-grid">
+
+  @for (course of courses; track course.id) {
+    <app-course-card
+      [course]="course"
+      (enrollRequested)="onEnroll($event)">
+    </app-course-card>
+  }
+
+</div>
+
+@if (selectedCourseId) {
+  <p>
+    Selected course ID: {{ selectedCourseId }}
+  </p>
+}
