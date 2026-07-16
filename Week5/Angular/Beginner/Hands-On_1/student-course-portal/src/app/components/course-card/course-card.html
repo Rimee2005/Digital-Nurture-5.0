@@ -8,6 +8,22 @@
 
   <p>Credits: {{ course.credits }}</p>
 
+  <div [ngSwitch]="course.gradeStatus">
+
+    <span *ngSwitchCase="'passed'">
+      Passed
+    </span>
+
+    <span *ngSwitchCase="'failed'">
+      Failed
+    </span>
+
+    <span *ngSwitchDefault>
+      Pending
+    </span>
+
+  </div>
+
   <button (click)="onEnroll()">
     Enroll
   </button>

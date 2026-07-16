@@ -7,9 +7,19 @@ import {
   SimpleChanges
 } from '@angular/core';
 
+import {
+  NgSwitch,
+  NgSwitchCase,
+  NgSwitchDefault
+} from '@angular/common';
+
 @Component({
   selector: 'app-course-card',
-  imports: [],
+  imports: [
+    NgSwitch,
+    NgSwitchCase,
+    NgSwitchDefault
+  ],
   templateUrl: './course-card.html',
   styleUrl: './course-card.css'
 })
@@ -20,6 +30,7 @@ export class CourseCard implements OnChanges {
     name: string;
     code: string;
     credits: number;
+    gradeStatus: 'passed' | 'failed' | 'pending';
   };
 
   @Output() enrollRequested = new EventEmitter<number>();
