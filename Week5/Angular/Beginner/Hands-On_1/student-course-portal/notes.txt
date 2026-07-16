@@ -13,3 +13,9 @@ src/app/app.config.ts - Contains application-level configuration and providers.
 src/app/app.component.ts - Defines the root component of the application.
 
 src/index.html - The main HTML file containing the root Angular element.
+
+Budgets in angular.json control the size of the generated application bundles.
+
+For the initial bundle, Angular shows a warning when the size exceeds 500kB and fails the build when it exceeds 1MB.
+
+For any component style, Angular shows a warning when the size exceeds 4kB and fails the build when it exceeds 8kB.
