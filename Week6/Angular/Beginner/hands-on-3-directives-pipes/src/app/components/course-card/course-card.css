@@ -1,0 +1,26 @@
+.course-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 8px;
+}
+
+.badge {
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.passed {
+  background-color: green;
+  color: white;
+}
+
+.failed {
+  background-color: red;
+  color: white;
+}
+
+.pending {
+  background-color: grey;
+  color: white;
+}

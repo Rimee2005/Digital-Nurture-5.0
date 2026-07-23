@@ -1,0 +1,28 @@
+<h1>Available Courses</h1>
+
+<!-- Show loading message while courses are loading -->
+<p *ngIf="isLoading">
+  Loading courses...
+</p>
+
+<!-- Show courses after loading is complete -->
+<div *ngIf="!isLoading">
+
+  <!-- Show course cards if courses are available -->
+  <div *ngIf="courses.length > 0; else noCourses">
+
+    <app-course-card
+      *ngFor="let course of courses; let i = index; trackBy: trackByCourseId"
+      [course]="course">
+    </app-course-card>
+
+  </div>
+
+</div>
+
+<!-- Show this when courses array is empty -->
+<ng-template #noCourses>
+
+  <p>No courses available.</p>
+
+</ng-template>
